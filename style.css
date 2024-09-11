@@ -1,0 +1,101 @@
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container > div {
+    width: 30%;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.container > div > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.soat-1,
+.soat-2,
+.soat-3,
+.soat-4,
+.soat-5,
+.soat-6 {
+    border: 1px solid black;
+    margin-bottom: 10px;
+    /* padding: 5px; */
+    padding: 0px 0px 0px 20px;
+}
+
+.soat-1 h1,
+.soat-2 h1,
+.soat-3 h1,
+.soat-4 h1,
+.soat-5 h1,
+.soat-6 h1 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.soat-1 h3,
+.soat-2 h3,
+.soat-3 h3,
+.soat-4 h3,
+.soat-5 h3,
+.soat-6 h3 {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .container > div {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container > div {
+        width: 100%;
+    }
+}
+@media (max-width: 1050px) {
+    .container > div {
+        width: 45%;
+    }
+}
+
+@media (max-width: 850px) {
+    .container > div {
+        width: 48%;
+    }
+}
+
+@media (max-width: 700px) {
+    .container > div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .container > div {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container > div {
+        width: 90%;
+    }
+}
+
+@media (max-width: 370px) {
+    .container > div {
+        width: 100%;
+    }
+}
